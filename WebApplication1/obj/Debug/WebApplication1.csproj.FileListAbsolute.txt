@@ -1,0 +1,10 @@
+c:\Chary\WebApplication1\WebApplication1\bin\WebApplication1.dll
+c:\Chary\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+c:\Chary\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+c:\Chary\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\inetpub\wwwroot\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\inetpub\wwwroot\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\inetpub\wwwroot\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\inetpub\wwwroot\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Chary\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache

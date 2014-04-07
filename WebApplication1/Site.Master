@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 1232px;
+            height: 354px;
+        }
+
+        .auto-style2
+        {
+            height: 59px;
+        }
+
+        .auto-style3
+        {
+            height: 90px;
+        }
+
+        .auto-style4
+        {
+            height: 354px;
+            width: 200px;
+        }
+
+        .Menu
+        {
+        }
+
+            .Menu ul
+            {
+                background: #7795BD;
+            }
+
+                .Menu ul li
+                {
+                    background: #7795BD url(menu_bg.gif) repeat-x;
+                    text-align: center;
+                    /* set width if needed.*/
+                    width: 200px;
+                }
+
+                    .Menu ul li a
+                    {
+                        color: black;
+                        padding: 4px 2px 4px;
+                        padding-left: 8px !important;
+                        border: 1px solid #648ABD;
+                        border-bottom: 0;
+                    }
+
+                        .Menu ul li a:hover
+                        {
+                            background-image: none;
+                        }
+
+                        .Menu ul li a:hover
+                        {
+                            color: White;
+                        }
+
+                    .Menu ul li a
+                    {
+                        color: Black;
+                    }
+    </style>
+</head>
+<body style="background: url(/Image/globe1.jpg)">
+    <form id="form1" runat="server">
+        <div>
+            <table border="1" style="border-color: blue">
+                <%--tr style=”background: url(/images/tr-background.gif) no-repeat 0 0;--%>
+                <%--<tr style="background-image: url(/Image/map.jpg)">--%>
+                <tr>
+                    <td colspan="2" class="auto-style3" style="text-align: center">
+                        <h1>Tourist Map Finder</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right">Welcome <% =Page.User.Identity.Name %><asp:Label runat="server" ID="lblLoggedInUserName"></asp:Label>
+                        <asp:LinkButton ID="lnkSignOut" runat="server" Text="Sign Out" OnClick="lnkSignOut_Click" Visible="false"></asp:LinkButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4" style="vertical-align: text-top">
+                        <asp:Menu ID="Menu1" runat="server" CssClass="Menu">
+                            <Items>
+                                <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Registration/Home.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Welcome" Value="Welcome" NavigateUrl="~/Welcome.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="About Us" Value="AboutUs" NavigateUrl="~/Registration/AboutUs.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Register" Value="Register" NavigateUrl="~/Registration/Register.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                    <%--<td class="auto-style1" style="background-image: url(/Image/globe1.jpg)">--%>
+                    <td class="auto-style1">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <h2>This is the place where contents are displayed.</h2>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="auto-style2" style="font-family: Arial; text-align: center">
+                        <h1>Maps In Your Hand</h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
